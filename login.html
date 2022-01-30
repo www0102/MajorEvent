@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>大事件登录</title>
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <script src="/assets/lib/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/js/login.js"></script>
 </head>
 <body>
-    
+    <div class="login-logo">
+        <img src="/assets/images/logo.png" alt="logo加载失败">
+    </div>
+    <div class="login-box">
+        <p class="login-title">后台管理系统</p>
+        <div class="login-form">
+            <form>
+                <div class="form-item">
+                    <input type="text" name="username" id="login-username-input" placeholder="请输入用户名">
+                    <img src="/assets/fonts/用户名.png">
+                </div>
+                <div class="form-item">
+                    <input type="password" name="userpassword" id="login-userpassword-input" placeholder="请输入密码">
+                    <img src="/assets/fonts/密码.png">
+                </div>
+                <button type="submit" id="login-button">登录</button>
+            </form>
+            <a href="javascript:;" id="reg-link">去注册账号</a>
+        </div>
+        <div class="reg-form">
+            <form>
+                <div class="form-item">
+                    <input type="text" name="username" id="reg-username-input" placeholder="请输入用户名">
+                    <img src="/assets/fonts/用户名.png">
+                </div>
+                <div class="form-item">
+                    <input type="password" name="userpassword" id="reg-userpassword-input" placeholder="请输入密码">
+                    <img src="/assets/fonts/密码.png">
+                </div>
+                <div class="form-item">
+                    <input type="password" name="confirmpassword" id="confirmPassword-input" placeholder="请再次输入密码">
+                    <img src="/assets/fonts/密码.png">
+                </div>
+                <button type="submit"  id="reg-button">注册</button>
+            </form>
+            <a href="javascript:;" id="login-link">去登录</a>
+        </div>
+        <div class="loginErrorMessageBox">
+            <span class="loginMessage"></span>
+            <img src="/assets/fonts/警告.png">
+        </div>
+    </div>
 </body>
 </html>
