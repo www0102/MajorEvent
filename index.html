@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="/assets/lib/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/js/index.js"></script>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="logoBox">
+            <img src="/assets/images/logo.png" alt="logo加载失败">
+        </div>
+        <ul class="header-nav">
+            <li class="headerNav-info">
+                <a href="javascript:;" id="header-avatar">
+                    <div class="text-avatar"></div>
+                    <img src="http://t.cn/RCzsdCq" class="img-avatar">
+                    个人中心
+                    <div class="text-more" id="header-more"></div>
+                </a>
+                <dl class="headerNav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">更换头像</a></dd>
+                    <dd><a href="">重置密码</a></dd>
+                </dl>
+            </li>
+            <li class="headerNav-exit">
+                <a href="javascript:;" id="header-exit">退出</a>
+            </li>
+        </ul>
+    </div>
+    <div class="side">
+        <div class="user-info-box">
+            <div class="text-avatar"></div>
+            <img src="http://t.cn/RCzsdCq" class="img-avatar2">
+            <span id="welcomeSpan"></span>
+        </div>
+        <ul class="side-nav">
+            <li class="side-nav-item">
+                <a href="/home/dashboard.html" target="fm" class="current">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="side-nav-item">
+                <a href="javascript:;" id="article-manage">
+                    <span>文章管理</span>
+                </a>
+                <dl class="sideNav-child">
+                    <dd><a href="#">文章类别</a></dd>
+                    <dd><a href="#">文章列表</a></dd>
+                    <dd><a href="#">发表文章</a></dd>
+                </dl>
+                <div class="side-text-more"></div>
+            </li>
+            <li class="side-nav-item">
+                <a href="javascript:;" id="userinfo-manage">
+                    <span>个人中心</span>
+                </a>
+                <dl class="sideNav-child">
+                    <dd><a href="#">基本资料</a></dd>
+                    <dd><a href="#">更换头像</a></dd>
+                    <dd><a href="#">重置密码</a></dd>
+                </dl>
+                <div class="side-text-more"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="body">
+        <iframe src="http://escook.cn:8086/home/dashboard.html" frameborder="0" name="fm"></iframe>
+    </div>
+    <div class="footer">
+        © www.itheima.com - 吴伟伟
+    </div>
 </body>
 </html>
