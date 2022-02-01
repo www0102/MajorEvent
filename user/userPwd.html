@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/user/userPwd.css">
+    <script src="/assets/lib/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/js/user/userPwd.js"></script>
+</head>
+<body>
+    <div class="userPwd-box">
+        <div class="title">修改密码</div>
+        <div class="userPwd-form">
+            <form>
+                <div class="form-item">
+                    <span>原密码</span>
+                    <input type="password" name="oldPwd" id="oldPwd" placeholder="请输入原密码">
+                </div>
+                <div class="form-item">
+                    <span>新密码</span>
+                    <input type="password" name="newPwd" id="newPwd" placeholder="请输入新密码">
+                </div>
+                <div class="form-item">
+                    <span>确认新密码</span>
+                    <input type="password" name="confirmNewPwd" id="confirmNewPwd" placeholder="请确认新密码">
+                </div>
+                <div class="form-button">
+                    <button id="submitBtn">修改密码</button>
+                    <button id="resetBtn">重置</button>
+                </div>
+                <input type="hidden" name="userID" id="userID">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

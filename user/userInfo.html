@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/user/userInfo.css">
+    <script src="/assets/lib/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/js/user/userInfo.js"></script>
+</head>
+<body>
+    <div class="userInfo-box">
+        <div class="title">修改用户信息</div>
+        <div class="userInfo-form">
+            <form>
+                <div class="form-item">
+                    <span>登录名称</span>
+                    <input type="text" name="userName" id="userName" readonly style="user-select: none; outline: none;">
+                </div>
+                <div class="form-item">
+                    <span>用户昵称</span>
+                    <input type="text" name="nickName" id="nickName">
+                </div>
+                <div class="form-item">
+                    <span>用户邮箱</span>
+                    <input type="email" name="userEmail" id="userEmail">
+                </div>
+                <div class="form-button">
+                    <button id="submitBtn">提交修改</button>
+                    <button id="resetBtn">重置</button>
+                </div>
+                <input type="hidden" name="userID" id="userID">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

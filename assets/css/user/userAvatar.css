@@ -1,0 +1,50 @@
+*{
+    padding: 0px; margin: 0px; box-sizing: border-box;
+}
+body{
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+.userAvatar-box{
+    width: 993px; height: 475px;
+    background-color: white;
+}
+.title{
+    width: 100%; height: 43px;
+    padding: 0px 15px;
+    line-height: 43px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #f6f6f6;
+}
+.userAvatar-img{
+    width: 100%; height: 380px;
+    padding: 10px 15px;
+}
+.userAvatar-btn{
+    width: 100%; height: 38px;
+    padding-left: 15px;
+}
+#selectImgBtn{
+    border:none;
+    width: 92px; height: 36px;
+    color: white;
+    background-color: #009688;
+    line-height: 38px; text-align: center;
+    cursor: pointer;
+}
+#postAvatar{
+    margin-left: 10px;
+    width: 92px; height: 38px;
+    color: white;
+    border:none;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+#avatarImgFile{
+    display: none;
+}
+#avatar-img{
+    height: 350px;
+}

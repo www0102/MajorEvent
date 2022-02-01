@@ -10,4 +10,12 @@ $.ajaxPrefilter(function(options){
             Authorization: localStorage.getItem("token") || ""
         }
     }
+    options.complete = function (res) {
+        // console.log("无论成功与失败，都会执行complete回调");
+        // console.log(res); 数据在res.responseJSON中
+        if(res.responseJSON.status == 1 && res.responseJSON.message == "身份认证失败！"){
+            localStorage.removeItem("token");
+            location.href = "/login.html";
+        }
+    }
 })

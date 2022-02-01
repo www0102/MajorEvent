@@ -1,0 +1,67 @@
+*{
+    padding: 0px; margin: 0px; box-sizing: border-box;
+}
+body{
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+.userPwd-box{
+    width: 993px; height: 275px;
+    background-color: white;
+}
+.title{
+    width: 100%; height: 43px;
+    padding: 0px 15px;
+    line-height: 43px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #f6f6f6;
+}
+.userPwd-form{
+    width: 100%; height: 227px;
+    padding: 10px 15px;
+}
+.userPwd-form form{
+    width: 520px; height: 197px;
+}
+.form-item{
+    width: 100%; height: 38px;
+    margin-bottom: 15px;
+}
+.form-item span{
+    display: inline-block;
+    width: 100px; height: 38px;
+    padding: 9px 15px;
+    text-align: right; line-height: 20px;
+    font-size: 14px;
+    color: #333;
+}
+.form-item input{
+    width: 390px; height: 38px;
+    border: 1px solid #d8d8d8;
+    line-height: 38px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.form-button{
+    width: 100%; height: 38px;
+    padding-left: 110px;
+}
+#submitBtn{
+    border:none;
+    width: 92px; height: 36px;
+    color: white;
+    background-color: #009688;
+    line-height: 38px; text-align: center;
+    cursor: pointer;
+}
+#resetBtn{
+    margin-left: 10px;
+    width: 66px; height: 38px;
+    border:1px solid #d8d8d8;
+    background-color: white;
+    cursor: pointer;
+}
+#resetBtn:hover{
+    border:1px solid #009688;
+}
